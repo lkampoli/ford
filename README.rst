@@ -65,7 +65,7 @@ command
 
 ::
 
-    sudo pip install ford
+    pip install ford
 
 Pip will automatically handle all dependencies for you. If you do not
 have administrative rights on the computer where you want to produce

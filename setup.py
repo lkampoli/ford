@@ -10,7 +10,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
   name = 'FORD',
-  packages = ['ford'],
+  packages = find_packages(),
   include_package_data = True,
   version = '5.0.6',
   description = 'FORD, standing for FORtran Documenter, is an automatic documentation generator for modern Fortran programs.',
@@ -18,7 +18,7 @@ setup(
   author = 'Chris MacMackin',
   author_email = 'cmacmackin@gmail.com',
   url = 'https://github.com/cmacmackin/ford/', 
-  download_url = 'https://github.com/cmacmackin/ford/tarball/5.0.6',
+  download_url = 'https://github.com/scivision/ford/archive/v5.0.6.tar.gz',
   keywords = ['Markdown', 'Fortran', 'documentation', 'comments'],
   classifiers=[
         # How mature is this project? Common values are
@@ -48,7 +48,7 @@ setup(
     ],
   install_requires = ['markdown','markdown-include >= 0.5.1','toposort',
                       'jinja2 >= 2.1','pygments','beautifulsoup4>=4.5.1',
-                      'graphviz','md-environ', 'tqdm'],
+                      'graphviz','md-environ','tqdm'],
   entry_points = {
     'console_scripts': [
         'ford=ford:run',

@@ -56,7 +56,8 @@ The simplest way to install FORD is using [pip](https://pip.pypa.io/en/latest/).
 This can be done with the commands:
 
     sudo apt-get install python-pip python-dev build-essential #For Debian-based Linux, if pip not already installed
-    sudo pip install ford
+    
+    pip install ford
 
 Pip will automatically handle all dependencies for you. If
 you do not have administrative rights on the computer where you want to produce
